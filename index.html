@@ -1,0 +1,36 @@
+<!doctype html>
+
+<!--
+    Simple demo of GitHub git API
+-->
+
+<html lang="us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demos of GitHub API</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="github.js"></script>
+    <script src="ficheros.js"></script>
+  </head>
+  <body>
+
+    <div id="form">
+      Token : <input type="text" name="token" value="" id="token" size="36" />
+      <button id="grabToken" type="button">Enviar token</button>
+    </div>
+
+    <div id ="repo" hidden >
+      Repositorio : <input type="text" name="Repositorio" value="" id="repositorio" size="36" /></br>
+      Usuario: <input type="text" name="Username" value="" id="username" size="18" />
+      Fichero: <input type="text" name="fich" value="" id="fich" size="18" /> </br>
+      Texto: <input type="text" name="text" value="" id="text" size="36" />
+      <button id="grabRepo" type="button">Enviar reposotorio</button></br>
+      <button id="getInfo" type="button">Obtener información</button>
+    </div>
+
+    <div id="info"> </div>
+
+  </body>
+</html>
